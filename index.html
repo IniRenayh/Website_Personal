@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio Cerena Permata Agung</title>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f7fc;
+            color: #333;
+        }
+        header {
+            background: linear-gradient(135deg, #1DE5E2, #B588F7);
+            color: white;
+            padding: 50px 20px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        header h1 {
+            margin: 0;
+            font-size: 3em;
+            font-weight: 600;
+        }
+        header p {
+            margin: 10px 0 0;
+            font-size: 1.3em;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            background-color: #ffffff;
+            padding: 15px 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        nav button {
+            background: linear-gradient(135deg, #1DE5E2, #B588F7);
+            border: none;
+            border-radius: 25px;
+            color: white;
+            padding: 10px 20px;
+            font-size: 1em;
+            font-weight: 500;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.2s;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        nav button:hover {
+            transform: translateY(-2px);
+            background: linear-gradient(135deg, #B588F7, #1DE5E2);
+        }
+        nav button:focus {
+            outline: none;
+        }
+        section {
+            padding: 40px 20px;
+            max-width: 900px;
+            margin: 30px auto;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+            display: none;
+            border: 1px solid #ddd;
+        }
+        section.active {
+            display: block;
+        }
+        section h2 {
+            font-size: 2em;
+            margin-bottom: 20px;
+            color: #1DE5E2;
+            border-bottom: 2px solid #1DE5E2;
+            padding-bottom: 5px;
+            text-align: center;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        ul li {
+            margin: 10px 0;
+            font-size: 1.1em;
+        }
+        ul li:before {
+            content: "\2022";
+            color: #1DE5E2;
+            font-weight: bold;
+            display: inline-block;
+            width: 1em;
+        }
+        img {
+            display: block;
+            margin: 20px auto;
+            width: 160px;
+            height: 160px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid #1DE5E2;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: linear-gradient(135deg, #1DE5E2, #B588F7);
+            color: white;
+            margin-top: 30px;
+        }
+        footer p {
+            margin: 0;
+            font-size: 1em;
+        }
+        a {
+            color: #1DE5E2;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .box {
+            border: 1px solid #1DE5E2;
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <script>
+        function showSection(id) {
+            const sections = document.querySelectorAll('section');
+            sections.forEach(section => section.classList.remove('active'));
+            document.getElementById(id).classList.add('active');
+        }
+    </script>
+</head>
+<body>
+
+<header>
+    <h1>Cerena Permata A</h1>
+    <p>Programmer | Web Development</p>
+</header>
+
+<nav>
+    <button onclick="showSection('profile')">Profil</button>
+    <button onclick="showSection('skills')">Keahlian</button>
+    <button onclick="showSection('contact')">Kontak</button>
+</nav>
+
+<section id="profile" class="active">
+    <h2>Profil dan Informasi Perorangan</h2>
+    <div class="box">
+        <img src="foto/WhatsAppImage2024-11-07at20.35.35_4ba9d898.jpg" alt="Foto Cerena Permata Agung">
+        <p>
+            Yth. HRD PT. CREATIVE MEDIA<br>
+            Jl. Raya Tubanan Baru No.10 Blok K-15, Tubanan, Kec. Tandes, Surabaya, Jawa Timur 60188
+        </p>
+        <p>
+            Saya adalah siswa SMK dengan latar belakang Rekayasa Perangkat Lunak (RPL) yang memiliki minat besar di bidang Software Engineering. Selama pendidikan, saya mendalami software, coding, dan proyek berbasis HTML, yang memberikan saya pemahaman mendalam dan nilai yang baik. Saya juga memiliki keterampilan dalam Public Speaking, cepat belajar, dan mudah beradaptasi dengan berbagai aplikasi serta perangkat lunak.
+        </p>
+        <p>
+            Saya memilih Creative Media untuk PKL guna memperdalam pengetahuan di bidang Design, Web Development, serta Mobile Apps Development. Saya yakin bahwa komitmen, ketekunan, dan kemampuan belajar saya dapat memberikan kontribusi berarti bagi perusahaan. Melalui kesempatan ini, saya berharap dapat mengasah keterampilan lebih lanjut dan terus berkembang di bidang yang saya tekuni.
+        </p>
+    </div>
+    <div class="box">
+        <ul>
+            <li><strong>Nama lengkap:</strong> Cerena Permata Agung</li>
+            <li><strong>Tempat, tanggal lahir:</strong> Mojokerto, 15 Oktober 2007</li>
+            <li><strong>Kewarganegaraan:</strong> Indonesia</li>
+            <li><strong>Agama:</strong> Islam</li>
+            <li><strong>Jenis kelamin:</strong> Perempuan</li>
+            <li><strong>Status marital:</strong> Pelajar</li>
+            <li><strong>Pendidikan:</strong> SMK</li>
+            <li><strong>Jurusan:</strong> Rekayasa Perangkat Lunak (RPL)</li>
+        </ul>
+    </div>
+    <div class="box">
+        <h3>Pendidikan</h3>
+        <ul>
+            <li><strong>SMP:</strong> SMPI Al Akbar</li>
+            <li><strong>SMK:</strong> SMKN 1 Dlanggu</li>
+        </ul>
+    </div>
+</section>
+
+<section id="skills">
+    <h2>Skill dan Kualifikasi</h2>
+    <div class="box">
+        <h3>Hard Skills:</h3>
+        <ul>
+            <li>Pemrograman: Java, HTML, CSS</li>
+            <li>Tools Pengembangan: VS Code</li>
+            <li>Office Suite: Microsoft Excel, Word, PowerPoint</li>
+            <li>Desain Grafis: Adobe Photoshop</li>
+            <li>Pengoperasian komputer dan troubleshooting dasar</li>
+            <li>Kemampuan Bahasa Inggris (Intermediate, baik lisan maupun tulisan)</li>
+        </ul>
+        <h3>Soft Skills:</h3>
+        <ul>
+            <li>Public Speaking</li>
+            <li>Cepat belajar dan mudah beradaptasi</li>
+            <li>Kemampuan analisis dan pemecahan masalah</li>
+            <li>Kerja tim yang baik</li>
+            <li>Manajemen waktu dan organisasi</li>
+            <li>Kemampuan komunikasi efektif</li>
+        </ul>
+    </div>
+</section>
+
+<section id="contact">
+    <div class="box">
+        <ul>
+            <li><strong>Alamat Sekolah:</strong> Jl. A. Yani 1 Ds. Pohkecik Kec. Dlanggu Kab. Mojokerto, Kecamatan Dlanggu, Kabupaten Mojokerto, Jawa Timur</li>
+            <li><strong>Nomor HP:</strong> +6285730235668</li>
+            <li><strong>E-mail:</strong> <a href="mailto:cerenapermata@gmail.com">cerenapermata@gmail.com</a></li>
+        </ul>
+    </div>
+    <p>
+        Saya sangat berharap dapat diberikan kesempatan untuk berkontribusi dan belajar di perusahaan Bapak/Ibu. Saya percaya pengalaman ini akan menjadi langkah penting dalam pengembangan kemampuan saya.
+    </p>
+    <p>
+        Saya siap untuk berdiskusi lebih lanjut terkait kesempatan ini dan berharap dapat menjadi bagian dari tim yang luar biasa di perusahaan Bapak/Ibu. Atas perhatian dan kesempatannya, saya ucapkan terima kasih yang sebesar-besarnya.
+    </p>
+</section>
+
+<footer>
+    <p>&copy; 2024 CRena's </p>
+</footer>
+
+</body>
+</html>
